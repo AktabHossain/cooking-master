@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking master</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+         
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                  <h2 class="text-light">Cooking master</h2>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse  justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active  text-light" aria-current="page" href="#">Home</a>
+                      <a class="nav-link  text-light" href="#">About</a>
+                      <a class="nav-link  text-light" href="#">Recipes</a>
+                      <a class="nav-link  text-light" href="#">Blog</a>
+                    </div>
+                  </div>
+              </nav>
+            </div>
+   
+    <div class="container">
+        <form class="col-md-8 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="input-text" type="text" class="form-control"  placeholder="Search for Meal...">
+                <div class="input-group-append">
+                    <button onclick="mealInput()" type="button" class="btn btn-info">Search</button>
+                </div>
+            </div>
+        </form>
+   
+        <div class="py-2" id="meal"></div>
+
+  
+        <div id="meal-ingredient">
+            <img src="https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg/preview" id="thumbnail-details"/>
+            <div class="py-4 px-3">
+              <h4 id="meal-details">Meal</h4>
+              <h6 class="py-1">Ingredients</h6>
+              <div id="ingredient-details"></div>   
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
